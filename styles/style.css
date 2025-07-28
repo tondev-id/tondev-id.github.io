@@ -19,17 +19,13 @@ header {
   background-color: #333;
   border-bottom: 1px solid rgb(43, 158, 43);
   box-shadow: 1px 1px 5px rgb(43, 158, 43);
-  padding: 10px 30px;
+  padding: 10px 100px;
 }
 
 .name-logo {
   font-size: 1rem;
   color: #eee;
   text-shadow: 3px 3px 5px rgb(43, 158, 43);
-}
-
-header .navbar {
-  margin-right: 40px;
 }
 
 header .navbar ul li {
@@ -58,4 +54,35 @@ header .navbar ul li a:focus {
   outline: none;
   color: rgb(43, 158, 43);
   border-bottom: 3px solid rgb(43, 158, 43);
+}
+/* Home section */
+section#home {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #333;
+    letter-spacing: 1.5px;
+}
+
+footer p {
+  font-size: 0.95rem;
+  padding: 10px 0;
+  text-align: center;
+  color: #eee;
+}
+
+footer p > a {
+    font-size: 1.05rem;
+    color: #eee;
+    text-shadow: 1px 1px 5px rgb(43, 158, 43);
+    text-decoration: none;
+}
+
+footer p > a:hover {
+    color: rgb(43, 158, 43);
+    text-shadow: 1px 1px 5px #eee;
 }
