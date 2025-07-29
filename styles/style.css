@@ -15,6 +15,19 @@ main {
   width: 100%;
 }
 
+.hamburger-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger-menu span {
+  display: block;
+  margin-bottom: 5px;
+  width: 30px;
+  height: 5px;
+  background-color: rgb(43, 158, 43);
+}
+
 /* Header */
 header {
   position: fixed;
@@ -487,8 +500,12 @@ footer p > a:hover {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
   header {
-    justify-content: center;
+    padding: 10px;
   }
 
   header h1 {
@@ -497,6 +514,16 @@ footer p > a:hover {
 
   header .navbar {
     display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 70%;
+    height: 50vh;
+    background-color: red;
+  }
+
+  .navbar ul li a {
+    margin: 0;
   }
 
   #home {
