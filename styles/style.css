@@ -599,13 +599,23 @@ footer p > a:hover {
 
   #contact .right {
     width: 100%;
-   }
+  }
 
-   .right h2 {
+  .right h2 {
     font-size: 1.5rem;
-   }
+  }
 
-   form label {
+  form label {
     font-size: 1rem;
-   }
+  }
+  .right form {
+    width: 100%;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    font-size: 0.8rem;
+    padding: 5px 3px;
+  }
 }
