@@ -5,6 +5,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 16px;
   font-family: sans-serif;
   color: #eee;
@@ -66,6 +67,9 @@ header .navbar {
   margin-left: 50px;
   padding-bottom: 6px;
   cursor: pointer;
+  transition-property: border-bottom, border-bottom-left-radius,
+    border-bottom-right-radius;
+  transition-duration: 1s;
 }
 
 .navbar ul li a:hover,
@@ -177,6 +181,10 @@ header .navbar {
   border-radius: 3px;
   padding: 5px;
   cursor: pointer;
+}
+
+.icon-sosial ul li a:hover {
+  transition: color 0.7s ease-in;
 }
 
 .icon-sosial ul li a:hover,
@@ -294,6 +302,9 @@ header .navbar {
 .container-skill .card-skill:hover {
   background-color: #ddd;
   box-shadow: 3px 3px 8px rgb(43, 158, 43);
+  transition-property: box-shadow, background-color;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
 }
 
 /* Project section */
@@ -346,6 +357,9 @@ header .navbar {
 .container-project .project-card:hover {
   box-shadow: 0 0 7px rgb(43, 158, 43);
   background-color: rgb(0 0 0 / 40%);
+  transition-property: box-shadow, background-color;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in;
 }
 
 /* Contact section */
@@ -439,7 +453,9 @@ form input[type="submit"]:focus {
 
 form input[type="submit"]:hover,
 .btn-cta .btn-contact:hover {
+  transition: background-color 1s ease-in-out;
   background-color: rgb(43 158 43 / 85%);
+  box-shadow: 0 0 5px rgb(43, 158, 43);
 }
 
 /* Footer */
@@ -642,12 +658,12 @@ footer p > a:hover {
   }
 
   #about {
-    padding: 10px;
+    padding: 40px 10px 10px;
   }
 
   #about .container-about {
     width: 100%;
-    padding-top: 30px;
+    padding-top: 25px;
   }
 
   .container-about .left {
@@ -664,7 +680,8 @@ footer p > a:hover {
   }
 
   .right .about-me h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
   }
 
   .about-msg p {
@@ -689,7 +706,7 @@ footer p > a:hover {
   }
 
   #project {
-    padding: 30px 10px;
+    padding: 60px 10px;
   }
 
   #project h2 {
