@@ -134,6 +134,56 @@ header .navbar {
   font-size: 1.2rem;
 }
 
+.greeting-msg .btn-cta {
+  display: block;
+  width: 500px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.btn-cta .btn-contact {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #eee;
+  background-color: rgb(43, 158, 43);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-cta .icon-sosial {
+  display: inline-block;
+  width: 150px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+.icon-sosial ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-sosial ul li {
+  list-style: none;
+}
+
+.icon-sosial ul li a {
+  font-size: 1.2rem;
+  color: #eee;
+  box-shadow: 0 0 5px rgb(43, 158, 43);
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.icon-sosial ul li a:hover,
+.icon-sosial ul li a:focus {
+  color: rgb(43, 158, 43);
+}
+
 /* About section */
 #about {
   display: block;
@@ -380,12 +430,15 @@ form input[type="submit"] {
 
 form input[type="text"]:focus,
 form input[type="email"]:focus,
-form textarea:focus {
+form textarea:focus,
+.btn-cta .btn-contact:focus,
+form input[type="submit"]:focus {
   outline: 2px solid green;
   box-shadow: 0 0 10px rgb(43, 158, 43);
 }
 
-form input[type="submit"]:hover {
+form input[type="submit"]:hover,
+.btn-cta .btn-contact:hover {
   background-color: rgb(43 158 43 / 85%);
 }
 
@@ -562,6 +615,29 @@ footer p > a:hover {
   }
 
   .greeting-msg p {
+    font-size: 0.8rem;
+  }
+
+  .greeting-msg .btn-cta {
+    width: auto;
+  }
+
+  .btn-cta .btn-contact {
+    font-size: 1rem;
+  }
+
+  .btn-cta .icon-sosial {
+    display: block;
+    padding-top: 15px;
+    padding-left: 0;
+  }
+
+  .icon-sosial ul {
+    width: 100px;
+    justify-content: space-between;
+  }
+
+  .icon-sosial ul li a {
     font-size: 0.8rem;
   }
 
