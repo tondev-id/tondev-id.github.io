@@ -50,6 +50,20 @@ header {
   color: var(--main-color);
 }
 
+.container-header .hamburger-menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.container-header .hamburger-menu span {
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin: 3.5px 0;
+  background-color: var(--main-color);
+}
+
 .container-header nav ul {
   width: 350px;
   display: flex;
@@ -524,12 +538,73 @@ footer p > a:focus {
     height: 50px;
   }
 
+  .container-header {
+    width: 95%;
+  }
+
   .container-header .logo h1 {
     font-size: 2rem;
   }
 
+  .container-header .hamburger-menu {
+    border: 1px solid transparent;
+    display: block;
+    position: relative;
+  }
+
+  .container-header .hamburger-menu span.hamburger-on:nth-of-type(1) {
+    position: absolute;
+    top: 8px;
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+  }
+
+  .container-header .hamburger-menu span.hamburger-on:nth-of-type(2) {
+    position: absolute;
+    top: 8px;
+    margin-left: 50px;
+    transition: margin-left 0.4s;
+  }
+
+  .container-header .hamburger-menu span.hamburger-on:nth-of-type(3) {
+    position: absolute;
+    bottom: 8px;
+    transform: rotate(-45deg);
+    transition: transform 0.5s;
+  }
+
+  .container-header .hamburger-menu span.hamburger-off:nth-of-type(1) {
+    position: absolute;
+    top: 0;
+    transform: rotate(0deg);
+    transition: transform 0.4s;
+  }
+
+  .container-header .hamburger-menu span.hamburger-off:nth-of-type(2) {
+    position: absolute;
+    top: 8px;
+    margin-left: 0;
+    transition: margin-left 0.5s;
+  }
+
+  .container-header .hamburger-menu span.hamburger-off:nth-of-type(3) {
+    position: absolute;
+    bottom: 0;
+    transform: rotate(0deg);
+    transition: transform 0.4s;
+  }
+
   .container-header nav {
-    display: none;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    right: -450px;
+    background-color: #fff;
+    padding: 25px 15px 15px;
+  }
+
+  .container-header nav ul {
+    display: block;
   }
 
   #home {
