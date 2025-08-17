@@ -72,6 +72,10 @@ header {
   transition: 0.7s;
 }
 
+.container-header nav ul li a:focus {
+  outline: 2px dotted var(--main-color);
+}
+
 /* Home section */
 #home {
   width: 98%;
@@ -100,10 +104,6 @@ header {
   border-radius: 50%;
 }
 
-#home .container-hero h2 {
-  font-size: 2rem;
-}
-
 #home .container-hero .social-icon {
   width: 100%;
   margin-top: 10px;
@@ -129,6 +129,14 @@ header {
   background-color: #333;
   color: var(--main-color);
   transition: 0.7s;
+}
+
+#home .container-hero .social-icon ul li a:focus {
+  outline: 2px dotted var(--main-color);
+}
+
+#home .container-hero h2 {
+  font-size: 2rem;
 }
 
 #home .container-hero h2 > .name-hero {
@@ -166,6 +174,10 @@ header {
   color: var(--main-color);
   box-shadow: 0 0 5px var(--main-color);
   transition: 0.6s;
+}
+
+#home .container-hero .btn-cta a:focus {
+  outline: 2px dotted var(--main-color);
 }
 
 /* About section */
@@ -345,8 +357,7 @@ header {
   background-color: var(--main-color);
   color: #333;
   font-weight: bold;
-  padding: 5px 0;
-  border: 2px solid var(--main-color);
+  border: 1px solid var(--main-color);
 }
 
 #contact .container-contact input[type="submit"]:hover {
@@ -354,6 +365,9 @@ header {
   color: var(--main-color);
   box-shadow: 0 0 5px var(--main-color);
   transition: 0.4s;
+}
+#contact .container-contact input[type="submit"]:focus {
+  outline: 2px dotted var(--main-color);
 }
 
 #contact .container-contact input:focus,
@@ -383,4 +397,252 @@ footer p > a:hover {
     0 0 30px var(--bg-color);
   text-decoration: underline;
   transition: 0.7s;
+}
+
+footer p > a:focus {
+  outline: 2px dotted var(--bg-color);
+}
+
+/* Laptop */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 70px;
+  }
+
+  .container-header {
+    width: 90%;
+  }
+
+  #home .container-hero .circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  #home .container-hero .social-icon ul li a {
+    font-size: 1.3rem;
+  }
+
+  #home .container-hero h2 {
+    font-size: 1.5rem;
+  }
+
+  #home .container-hero h2 > .name-hero {
+    font-size: 3rem;
+  }
+
+  #home .container-hero h1 {
+    font-size: 3rem;
+  }
+
+  #home .container-hero p {
+    font-size: 1rem;
+  }
+
+  #home .container-hero .btn-cta a {
+    font-size: 1.4rem;
+  }
+
+  #about .container-about {
+    width: 95%;
+  }
+
+  #about .container-about h2 {
+    font-size: 2.2rem;
+  }
+  #about .container-about .content-about .profile-about {
+    width: 25%;
+    height: 250px;
+  }
+
+  #about .container-about .content-about .greeting-about p {
+    font-size: 1rem;
+    margin-bottom: 7px;
+  }
+
+  #about
+    .container-about
+    .content-about
+    .greeting-about
+    .skill
+    .content-skill
+    .card-skill {
+    width: 150px;
+    height: 50px;
+  }
+
+  #about
+    .container-about
+    .content-about
+    .greeting-about
+    .skill
+    .content-skill
+    .card-skill
+    h3 {
+    font-size: 0.9rem;
+  }
+
+  #projects {
+    padding-top: 80px;
+  }
+
+  #projects h2 {
+    font-size: 2rem;
+  }
+
+  #projects .content-projects {
+    width: 95%;
+    padding: 5px;
+  }
+
+  #projects .content-projects .card-projects {
+    width: 150px;
+    height: 200px;
+  }
+
+  #contact .container-contact {
+    max-width: 300px;
+  }
+
+  #contact .container-contact h2 {
+    font-size: 2rem;
+  }
+
+  #contact .container-contact label {
+    font-size: 1.3rem;
+  }
+
+  #contact .container-contact input,
+  #contact .container-contact textarea {
+    font-size: 1rem;
+    padding: 3px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  header {
+    height: 50px;
+  }
+
+  .container-header .logo h1 {
+    font-size: 2rem;
+  }
+
+  .container-header nav {
+    display: none;
+  }
+
+  #home {
+    width: 100%;
+  }
+
+  #home .container-hero .circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  #contact .container-contact {
+    width: 100%;
+  }
+
+  #home .container-hero .social-icon ul {
+    width: 100px;
+  }
+
+  #home .container-hero .social-icon ul li a {
+    font-size: 1rem;
+  }
+
+  #home .container-hero h2 {
+    font-size: 0.9rem;
+    padding-left: 10px;
+  }
+
+  #home .container-hero h2 > .name-hero {
+    font-size: 1.3rem;
+  }
+
+  #home .container-hero h1 {
+    font-size: 1.7rem;
+    padding-left: 20px;
+  }
+
+  #home .container-hero p {
+    font-size: 0.8rem;
+    padding-left: 10px;
+  }
+
+  #home .container-hero .btn-cta {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  #home .container-hero .btn-cta a {
+    font-size: 1.1rem;
+    margin-right: 0;
+  }
+
+  #about .container-about {
+    width: 100%;
+  }
+
+  #about .container-about h2 {
+    font-size: 2rem;
+  }
+
+  #about .container-about .content-about {
+    justify-content: center;
+  }
+
+  #about .container-about .content-about .profile-about {
+    display: none;
+  }
+
+  #about .container-about .content-about .greeting-about {
+    width: 100%;
+  }
+
+  #about .container-about .content-about .greeting-about p {
+    font-size: 1rem;
+  }
+
+  #about
+    .container-about
+    .content-about
+    .greeting-about
+    .skill
+    .content-skill
+    .card-skill {
+    margin: 0 3px;
+  }
+
+  #projects h2 {
+    font-size: 2rem;
+  }
+
+  #projects .content-projects {
+    width: 95%;
+    padding: 2px;
+  }
+
+  #projects .content-projects .card-projects {
+    width: 100px;
+    height: 150px;
+    margin: 2px;
+    border-radius: 3px;
+  }
+
+  #contact .container-contact h2 {
+    font-size: 2rem;
+  }
+
+  #contact .container-contact label {
+    font-size: 1rem;
+  }
+
+  #contact .container-contact input,
+  #contact .container-contact textarea {
+    font-size: 1.1rem;
+    padding: 2px 5px;
+  }
 }
