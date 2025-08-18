@@ -64,6 +64,13 @@ header {
   background-color: var(--main-color);
 }
 
+.container-header .navbar {
+  width: 430px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .container-header nav ul {
   width: 350px;
   display: flex;
@@ -77,6 +84,26 @@ header {
   font-weight: bold;
   color: #333;
   text-decoration: none;
+}
+
+.light-dark-mode {
+  cursor: pointer;
+  width: 40px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--bg-color);
+  border: 1px solid var(--main-color);
+  border-radius: 15px;
+}
+
+.light-dark-mode .circle {
+  width: 15px;
+  height: 15px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  margin-left: 2.5px;
 }
 
 .container-header nav ul li a:hover {
@@ -235,6 +262,7 @@ header {
 
 #about .container-about .content-about .greeting-about p {
   font-size: 1.2rem;
+  padding: 5px;
   margin-bottom: 10px;
   background-color: var(--bg-color);
 }
@@ -598,7 +626,7 @@ footer p > a:focus {
     position: absolute;
     width: 100%;
     top: 40px;
-    right: -450px;
+    right: -1000px;
     background-color: #fff;
     padding: 25px 15px 15px;
   }
@@ -607,8 +635,17 @@ footer p > a:focus {
     display: block;
   }
 
+  .container-header .navbar {
+    width: 90px;
+    flex-direction: row-reverse;
+  }
+
+  .container-header nav ul li {
+    margin-bottom: 5px;
+  }
+
   #home {
-    width: 100%;
+    width: 95%;
   }
 
   #home .container-hero .circle {
