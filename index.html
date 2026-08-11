@@ -6,163 +6,64 @@
     <link rel="icon" href="images/fav-icon.png" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <script
-      src="https://kit.fontawesome.com/123cc4aad9.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/a2457a2b30.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <div class="container-header">
-        <div class="logo">
-          <h1>TonDev.</h1>
-        </div>
-        <div class="navbar">
-          <div class="hamburger-menu">
-            <span class="hamburger-off"></span>
-            <span class="hamburger-off"></span>
-            <span class="hamburger-off"></span>
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-          <div id="light-dark" class="light-dark-mode light">
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
+    <header class="header">
+      <h1>TonDev.</h1>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About Me</a>
+          </li>
+          <li>
+            <a href="">Projects</a>
+          </li>
+          <li>
+            <a class="contact-btn" href="">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <section id="home">
-        <div class="container-hero">
-          <div class="circle">
-            <img src="" alt="Profile" />
-          </div>
-          <div class="social-icon">
-            <ul>
-              <li>
-                <a href="https://github.com/tondev-id" target="_blank"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://linkedin.com/in/TonDev-id" target="_blank"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-              </li>
-              <li>
-                <a href="mailto:tonniicode@gmail.com" target="_blank"
-                  ><i class="fa-solid fa-envelope-circle-check"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <h2>Hello, I&apos;m <span class="name-hero">TONI</span>.</h2>
-          <h1>FRONTEND DEVELOPER</h1>
-          <p>
-            a frontend developer, I can help you create an interactive and
-            responsive website.
-          </p>
-          <div class="btn-cta">
-            <a class="btn-contact-me" href="mailto:tonniicode@gmail.com" target="_blank">Contact me</a>
-            <a class="btn-projects" href="#projects">Projects</a>
-          </div>
-        </div>
-      </section>
-      <section id="about">
-        <div class="container-about">
-          <h2>About me</h2>
-          <div class="content-about">
-            <div class="profile-about">
-              <img src="" alt="Profile" />
+    <main class="main">
+      <section class="hero-section">
+        <div class="content">
+          <span class="say">Hello, everyone</span>
+          <h2 class="name">I'm Toni</h2>
+          <h2 class="professional">Web Developer</h2>
+          <p class="base">Base in Indonesia</p>
+          <p class="describe">I'am a website developer, I can build a website and good user experience.</p>
+          <div class="content-social">
+            <div class="lets-talk">
+              <a href="mailto:tonniicode@gmail.com" target="_blank">Let's Talk</a>
             </div>
-            <div class="greeting-about">
-              <p>
-                Hello, nice to meet you all. Let me introduce myself, my name is
-                Toni. I am a web developer as a frontend developer.
-              </p>
-              <p>
-                I love new things, I will help you create a good website,
-                beautify your website, be interactive and even help you solve
-                problems about your website. I entered the world of web
-                development in 2023, honestly before that I had no background in
-                technology.
-              </p>
-              <p>
-                I only learned autodidactically from websites, YouTube. I am
-                from Indonesia, specifically in West Kalimantan.
-              </p>
-              <div class="skill">
-                <h2>My skill:</h2>
-                <div class="content-skill">
-                  <div class="card-skill">
-                    <h3>HTML</h3>
-                  </div>
-                  <div class="card-skill">
-                    <h3>CSS</h3>
-                  </div>
-                  <div class="card-skill">
-                    <h3>JavaScript</h3>
-                  </div>
-                </div>
-              </div>
+            <div class="icons">
+              <ul>
+                <li>
+                  <a href="https://github.com/tondev-id" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/TonDev-id" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:tonniicode@gmail.com" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="content-projects">
-          <div class="card-projects">
-            <p>Example</p>
-          </div>
-        </div>
-      </section>
-      <section id="contact">
-        <div class="container-contact">
-          <form>
-            <h2>Contact</h2>
-            <div>
-              <label for="name">Name: </label>
-              <input
-                id="name"
-                type="text"
-                name="name"
-                placeholder="Enter name"
-              />
-            </div>
-            <div>
-              <label for="subject">Subject: </label>
-              <input
-                id="subject"
-                type="text"
-                name="subject"
-                placeholder="Enter subject"
-              />
-            </div>
-            <div>
-              <label for="mail">Email: </label>
-              <input
-                id="mail"
-                type="email"
-                name="email"
-                placeholder="Enter email"
-              />
-            </div>
-            <div>
-              <label for="message">Message: </label>
-              <textarea id="message" placeholder="Type message"></textarea>
-            </div>
-            <div>
-              <input type="submit" value="Submit" />
-            </div>
-          </form>
-        </div>
+      <section class="about-section">
+        
       </section>
     </main>
     <footer>
