@@ -9,68 +9,119 @@
     <script src="https://kit.fontawesome.com/a2457a2b30.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header class="header">
-      <h1>TonDev.</h1>
-      <nav class="navbar">
-        <ul>
-          <li>
-            <a href="">Home</a>
-          </li>
-          <li>
-            <a href="">About Me</a>
-          </li>
-          <li>
-            <a href="">Projects</a>
-          </li>
-          <li>
-            <a class="contact-btn" href="">Contact Me</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="hero-section">
-        <div class="content">
-          <span class="say">Hello, everyone</span>
-          <h2 class="name">I'm Toni</h2>
-          <h2 class="professional">Web Developer</h2>
-          <p class="base">Base in Indonesia</p>
-          <p class="describe">I'am a website developer, I can build a website and good user experience.</p>
-          <div class="content-social">
-            <div class="lets-talk">
-              <a href="mailto:tonniicode@gmail.com" target="_blank">Let's Talk</a>
-            </div>
-            <div class="icons">
-              <ul>
-                <li>
-                  <a href="https://github.com/tondev-id" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://linkedin.com/in/TonDev-id" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:tonniicode@gmail.com" target="_blank">
-                    <i class="fa-solid fa-envelope"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+  <header class="header">
+    <h1>TonDev.</h1>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about-me">About Me</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a class="contact-btn" href="#contact-me">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section id="home" class="hero-section">
+      <div class="content">
+        <span class="say">Hello, everyone</span>
+        <h2 class="name">I'm Toni</h2>
+        <h2 class="professional">Web Developer</h2>
+        <p class="base">Base in Indonesia</p>
+        <p class="describe">I'am a website developer, I can build a website and good user experience.</p>
+        <div class="content-social">
+          <div class="lets-talk">
+            <a href="">Let's Talk</a>
+          </div>
+          <div class="icons">
+            <ul>
+              <li>
+                <a href="">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-      <section class="about-section">
-        
-      </section>
-    </main>
-    <footer>
-      <p>
-        &copy;2025 made by <a href="https://github.com/tondev-id" target="_blank">TonDev.</a>
-      </p>
-    </footer>
-    <script src="scripts/main.js" defer></script>
+      </div>
+    </section>
+
+    <section id="about-me" class="about-section">
+      <h2 class="title">About Me</h2>
+      <div class="content-about">
+        <div class="image-about"></div>
+        <div class="describe-about">
+          <div class="about">
+            <h3>Hello, everyone!</h3>
+            <p>I'm a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. I love creating clean, responsive, and user-friendly web experiences that solve real problems.</p>
+            <p>Whether it's a sleek landing page, an interactive dashboard, or a full-featured web app,</p>
+            <p>I approach every project with attention to detail and a focus on performance and user experience.</p>
+          </div>
+          <div class="skill">
+            <h3>Skill</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2 class="title">Projects</h2>
+      <div class="lists-projects">
+        <div class="projects"></div>
+        <div class="projects"></div>
+        <div class="projects"></div>
+        <div class="projects"></div>
+      </div>
+    </section>
+
+    <section id="contact-me" class="contact-section">
+      <h2 class="title">Contact</h2>
+      <div class="contact-form">
+        <h3>Let's Connect!</h3>
+        <form class="form">
+          <div class="form-flex">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" />
+          </div>
+          <div class="form-flex">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" />
+          </div>
+          <div class="form-flex flex-textarea">
+            <label class="label-textarea" for="email">Message: </label>
+            <textarea rows="10" placeholder="Message..."></textarea>
+          </div>
+          <div class="form-flex flex-button">
+            <button>Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-section">
+    <p>
+      &copy;2026 made by <a class="footer-link" href="https://github.com/tondev-id" target="_blank">TonDev.</a>
+    </p>
+  </footer>
+  <script src="scripts/main.js" defer></script>
   </body>
 </html>
