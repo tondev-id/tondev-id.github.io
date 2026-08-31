@@ -448,8 +448,17 @@ html {
 
 /* Mobile */
 @media (max-width: 480px) {
-	.header .navbar {
-		display: none;
+	.header {
+		padding: 0 10px;
+	}
+	
+	.navbar li a {
+		font-size: 0.65rem;
+	}
+	
+	.navbar .contact-btn {
+		font-size: 0.7rem;
+		margin-left: 10px;
 	}
 	
 	.hero-section .hello {
