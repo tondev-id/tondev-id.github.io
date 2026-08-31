@@ -345,6 +345,7 @@ html {
   width: 70%;
   height: 40px;
   font-size: 1rem;
+	color: #000000;
   background-color: var(--primary-color);
   border: 2px solid var(--border-color);
 }
