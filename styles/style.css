@@ -453,12 +453,13 @@ html {
 	}
 	
 	.navbar li a {
-		font-size: 0.4rem;
+		font-size: 0.5rem;
 	}
 	
 	.navbar .contact-btn {
-		font-size: 0.4rem;
+		font-size: 0.6rem;
 		margin-left: 10px;
+		padding: 5px;
 	}
 	
 	.hero-section .hello {
