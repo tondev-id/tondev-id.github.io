@@ -9,10 +9,10 @@
     <script src="https://kit.fontawesome.com/a2457a2b30.js" crossorigin="anonymous"></script>
   </head>
   <body>
-  <header class="header">
-		<a class="logo" href="#">TonDev<span class="logo-dot">.</span></a>
-    <nav class="navbar">
-      <ul>
+  <header class="header flex">
+		<a class="logo" href="#">TonDev<span class="dot">.</span></a>
+    <nav class="navbar-header">
+      <ul class="flex">
         <li>
           <a href="#home">Home</a>
         </li>
@@ -23,119 +23,102 @@
           <a href="#projects">Projects</a>
         </li>
       </ul>
-			<a class="contact-btn" href="#contact-me">Contact Me</a>
     </nav>
+    <a class="contact-btn" href="#contact-me">Contact Me</a>
   </header>
 
-  <main class="main">
-    <section id="home" class="hero-section">
-      <div class="content">
-        <p class="hello">Hello, everyone</p>
-        <h2 class="name">I'm TONI</h2>
-        <h2 class="role">Web Developer</h2>
-        <p class="based">
+  <main>
+    <section id="home" class="hero-section flex">
+      <div class="hero-content">
+        <p class="title">Hi, I'm <span class="name">Toni</span></p>
+        <h1 class="role">
+          Junior Front-End Web Developer
+        </h1>
+        <p class="sub-title">
+          I build responsive, modern, and user-friendly websites by combining code, design, and creativity.
+        </p>
+        <p class="based-location">
 					<i class="fa-solid fa-location-dot"></i>
 					Based in Indonesia
 				</p>
-        <p class="describe">I'm a web developer who builds modern websites with a focus on great user experiences.</p>
-        <div class="content-social">
-          <div class="lets-talk">
-            <a href="">Let's Talk</a>
+        <div class="hero-section-btn flex">
+          <div class="cta-btn">
+            <a class="view-projects" href="">View Projects</a>
+            <a class="get-touch" href="">Get In Touch</a>
           </div>
-          <div class="icons">
-            <ul>
-              <li>
-                <a href="">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-              </li>
-            </ul>
+          <div class="social-icons">
+            <a href="">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
           </div>
         </div>
       </div>
-			
+			<div class="hero-image"></div>
     </section>
 
-    <section id="about-me" class="about-section">
-      <div class="content">
-        <div class="images">
-				
-				</div>
-				<div class="about-me">
-					<h2 class="title">About Me</h2>
-					<h3 class="hello">Hello, everyone!</h3>
-					<p class="para">
-						I'm a web developer who enjoys building responsive and user-friendly websites. I work primarily with HTML, CSS, and JavaScript, and I enjoy turning ideas into clean and functional web experiences.
-					</p>
-					<p class="para">
-						I'm passionate about learning, solving problems, and continuously improving my development skills. I care about writing clean code, creating responsive interfaces, and delivering a smooth experience for users.
-					</p>
-					<h3 class="title-tech">TECH STACK:</h3>
-					<div class="lists-tech">
-						<p>HTML</p>
-						<p>CSS</p>
-						<p>JavaScript</p>
-						<p>Git</p>
-						<p>GitHub</p>
-						<p>Responsive Design</p>
-					</div>
-				</div>
+    <section id="about-me" class="about-section flex">
+      <div class="about-image"></div>
+      <div class="about-content">
+        <h2 class="title">About Me</h2>
+        <p>
+          I’m a Junior Front-End Web Developer focused on creating modern, responsive, and user-centered websites. I enjoy combining creativity and technology to turn concepts into functional digital experiences.
+        </p>
+        <p>
+          With a foundation in HTML, CSS, and JavaScript, I build websites with clean structure, responsive layouts, and interactive features. I’m continuously exploring better ways to write code and create interfaces that provide a smooth user experience.
+        </p>
+        <p>
+          For me, development is a continuous learning process. I’m eager to take on new challenges, work on meaningful projects, and grow into a developer who can build better experiences for users across the web.
+        </p>
+        <div class="tect-content">
+          <h2 class="title-tech">TECH STACK</h2>
+          <div class="tech-stack flex">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Git</p>
+            <p>GitHub</p>
+          </div>
+        </div> 
       </div>
     </section>
 
     <section id="projects" class="projects-section">
-      <h2 class="title">Projects</h2>
-			<div class="lists-projects">
-				<div class="project">
-					<h2>Coming soon...</h2>
-				</div>
-				<div class="project">
-					<h2>Coming soon...</h2>
-				</div>
-				<div class="project">
-					<h2>Coming soon...</h2>
-				</div>
-			</div>
+      <div class="projects-content">
+        <h2 class="title">Projects</h2>
+        <div class="list-projects">
+          <div class="project"></div>
+          <div class="project"></div>
+          <div class="project"></div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact-me" class="contact-section">
-      <h2 class="title">Contact</h2>
-      <div class="contact-form">
-        <h3>Let's Connect!</h3>
-        <form class="form">
-          <div class="form-flex">
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" />
-          </div>
-          <div class="form-flex">
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" />
-          </div>
-          <div class="form-flex flex-textarea">
-            <label class="label-textarea" for="email">Message: </label>
-            <textarea rows="10" placeholder="Message..."></textarea>
-          </div>
-          <div class="form-flex flex-button">
-            <button>Send Message</button>
-          </div>
-        </form>
-      </div>
+    <section id="contact-me" class="contact-section flex">
+      <h2 class="title">Get in Touch</h2>
+      <p class="sub-title">
+        Have something in mind? Let’s talk. Send me a message and I’ll get back to you soon.
+      </p>
+      <form class="form flex">
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" />
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" />
+        <label class="label-textarea" for="email">Message: </label>
+        <textarea rows="10" placeholder="Message..."></textarea>
+        <button class="send-btn">Send Message</button>
+      </form>
     </section>
   </main>
 
   <footer class="footer-section">
     <p>
-      &copy;2026 made by <a class="footer-link" href="https://github.com/tondev-id" target="_blank">TonDev.</a>
+      &copy; 2026 made by <a class="footer-link" href="https://github.com/tondev-id" target="_blank">TonDev.</a>
     </p>
   </footer>
   <script src="scripts/main.js" defer></script>
