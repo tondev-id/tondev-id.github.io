@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/style.css" />
     <script src="https://kit.fontawesome.com/a2457a2b30.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
   <header class="header flex">
@@ -20,11 +21,14 @@
           <a href="#about-me">About Me</a>
         </li>
         <li>
+          <a href="#service">Service</a>
+        </li>
+        <li>
           <a href="#projects">Projects</a>
         </li>
       </ul>
     </nav>
-    <a class="contact-btn" href="#contact-me">Contact Me</a>
+    <a class="contact-btn" href="#contact">Contact Me</a>
   </header>
 
   <main>
@@ -43,17 +47,17 @@
 				</p>
         <div class="hero-section-btn flex">
           <div class="cta-btn">
-            <a class="view-projects" href="">View Projects</a>
-            <a class="get-touch" href="">Get In Touch</a>
+            <a class="view-projects" href="#projects">View Projects</a>
+            <a class="get-touch" href="#contact">Get In Touch</a>
           </div>
           <div class="social-icons">
-            <a href="">
+            <a href="https://github.com/tondev-id" target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/tondev-id/" target="_blank">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="">
+            <a href="mailto:tonniicode@gmail.com">
               <i class="fa-solid fa-envelope"></i>
             </a>
           </div>
@@ -88,8 +92,35 @@
       </div>
     </section>
 
+    <section id="service" class="service-section flex">
+      <h2 class="title">What I Can Do</h2>
+      <div class="service-cards flex">
+        <div class="card">
+          <i class="icon" data-lucide="globe"></i> 
+          <h3>Website Development</h3>
+          <p>
+            Building structured and functional websites with HTML, CSS, and JavaScript.
+          </p>
+        </div>
+        <div class="card">
+          <i class="icon" data-lucide="panels-top-left"></i>
+          <h3>Responsive Design</h3>
+          <p>
+            Creating layouts that adapt seamlessly to desktops, tablets, and mobile devices.
+          </p>
+        </div>
+        <div class="card">
+          <i class="icon" data-lucide="wrench"></i>
+          <h3>Web Interactions</h3>
+          <p>
+            Adding interactive elements with JavaScript to create a more engaging user experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <section id="projects" class="projects-section">
-      <div class="projects-content">
+      <div class="projects-content flex">
         <h2 class="title">Projects</h2>
         <div class="list-projects">
           <div class="project"></div>
@@ -99,7 +130,7 @@
       </div>
     </section>
 
-    <section id="contact-me" class="contact-section flex">
+    <section id="contact" class="contact-section flex">
       <h2 class="title">Get in Touch</h2>
       <p class="sub-title">
         Have something in mind? Let’s talk. Send me a message and I’ll get back to you soon.
@@ -109,8 +140,8 @@
         <input type="text" id="name" name="name" placeholder="Enter your name" />
         <label for="email">Email: </label>
         <input type="email" id="email" name="email" placeholder="Enter your email" />
-        <label class="label-textarea" for="email">Message: </label>
-        <textarea rows="10" placeholder="Message..."></textarea>
+        <label class="label-textarea" for="message">Message: </label>
+        <textarea id="message" name="message" rows="10" placeholder="Message..."></textarea>
         <button class="send-btn">Send Message</button>
       </form>
     </section>
@@ -122,5 +153,6 @@
     </p>
   </footer>
   <script src="scripts/main.js" defer></script>
+  <script>lucide.createIcons();</script>
   </body>
 </html>
