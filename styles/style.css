@@ -1,7 +1,8 @@
 :root {
-	--primary-color: #10fbf3;
-	--secondary-color: #00A39E;
-	--border-color: #00B8B1;
+	--primary-color: #FF7024;
+	--secondary-color: #E96D2B;
+	--bg-color: #FFF8F5;
+	--text-color: #0A0400;
 }
 
 * {
@@ -28,13 +29,13 @@ html {
   align-items: center;
   width: 100%;
   height: 75px;
-	background-color: #ffffff;
+	background-color: var(--bg-color);
 }
 
 .header .logo {
 	font-size: 2.5rem;
 	font-weight: bold;
-	color: #000;
+	color: var(--text-color);
 	text-decoration: none;
 }
 
@@ -50,18 +51,29 @@ html {
 
 .navbar-header li a {
   font-size: 1.1rem;
-  color: #333333;
+  color: var(--text-color);
   text-decoration: none;
 }
 
+.navbar-header li a:hover {
+	color: var(--primary-color);
+	transition: color ease 0.3s;
+}
+
 .header .contact-btn {
-  font-size: 1.2rem;
-	color: #000000;
+  font-size: 1rem;
+	font-weight: bold;
+	color: var(--text-color);
   background-color: var(--primary-color);
-  padding: 5px 10px;
-	border: 2px solid var(--border-color);
+  padding: 10px 20px;
+	border: 2px solid var(--secondary-color);
   border-radius: 20px;
 	text-decoration: none;
+}
+
+.header .contact-btn:hover {
+	background-color: var(--secondary-color);
+	transition: background-color ease-in 0.3s;
 }
 
 /* HERO - SECTION */
@@ -80,6 +92,7 @@ html {
 .hero-content .title .name {
 	font-size: 2rem;
 	font-weight: bold;
+	color: var(--primary-color);
 }
 
 .hero-section .role {
@@ -91,13 +104,13 @@ html {
 .hero-section .sub-title {
 	max-width: 500px;
 	font-size: 1.1rem;
-	color: #333333;
+	color: #777777;
 	margin-bottom: 10px;
 }
 
 .hero-section .based-location {
   font-size: 1.1rem;
-  color: #777777;
+  color: var(--primary-color);
   margin-bottom: 15px;
 }
 
@@ -110,26 +123,42 @@ html {
 	font-size: 1.25rem;
 	font-weight: bold;
 	padding: 10px 20px;
-	border: 1px solid #aaaaaa;
 	border-radius: 20px;
 	text-decoration: none;
 }
 
 .hero-section-btn .cta-btn .view-projects {
-	color: #000000;
+	color: var(--text-color);
 	background-color: var(--primary-color);
+	border: 2px solid var(--secondary-color);
+}
+
+.hero-section-btn .cta-btn .view-projects:hover {
+	background-color: var(--secondary-color);
+	transition: background-color ease .3s;
 }
 
 .hero-section-btn .cta-btn .get-touch {
-	color: #000000;
+	color: var(--text-color);
+	border: 1px solid var(--primary-color);
 	margin: 0 10px;
+}
+
+.hero-section-btn .cta-btn .get-touch:hover {
+	color: var(--primary-color);
+	transition: color ease .3s;
 }
 
 .hero-section-btn .social-icons a {
 	display: inline-block;
 	font-size: 1.25rem;
-	color: #000000;
+	color: var(--text-color);
 	margin: 0 5px;
+}
+
+.hero-section-btn .social-icons a:hover {
+	color: var(--primary-color);
+	transition: color ease .3s;
 }
 
 .hero-image {
@@ -144,6 +173,7 @@ html {
 	gap: 25px;
   width: 100%;
 	padding: 100px 0;
+	background-color: var(--bg-color);
 }
 
 .about-image {
@@ -156,7 +186,7 @@ html {
 	display: inline-block;
 	font-size: 2rem;
 	margin-bottom: 10px;
-	border-bottom: 1px solid var(--secondary-color);
+	border-bottom: 1px solid var(--primary-color);
 }
 
 .about-content {
@@ -165,6 +195,7 @@ html {
 
 .about-content p {
 	font-size: 1.1rem;
+	color: var(--text-color);
 	margin-bottom: 10px;
 }
 
@@ -173,13 +204,22 @@ html {
 	font-size: 1rem;
 	border-bottom: 1px solid var(--secondary-color);
 	margin-bottom: 5px;
+	padding-top: 15px;
 }
 
 .tect-content p {
+	cursor: pointer;
 	font-size: 1rem;
-	background-color: #eeeeee;
+	background-color: var(--bg-color);
 	padding: 5px 10px;
 	margin-right: 5px;
+	border: 1px solid var(--secondary-color);
+	border-radius: 3px;
+}
+
+.tect-content p:hover {
+	color: var(--primary-color);
+	transition: color ease .3s;
 }
 
 /* SERVICE - SECTION */
@@ -194,7 +234,7 @@ html {
 	display: inline-block;
 	font-size: 2rem;
 	margin-bottom: 30px;
-	border-bottom: 1px solid var(--secondary-color);
+	border-bottom: 1px solid var(--primary-color);
 }
 
 .service-cards {
@@ -203,8 +243,9 @@ html {
 
 .service-cards .card {
 	width: 350px;
-	background-color: #aaaaaa;
+	background-color: var(--bg-color);
 	padding: 20px;
+	border: 1px solid var(--primary-color);
 	border-radius: 5px;
 }
 
@@ -212,16 +253,17 @@ html {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .service-cards h3 {
 	font-size: 1.5rem;
-	margin-bottom: 5px;
+	color: var(--text-color);
+	margin-bottom: 10px;
 }
 
 .service-cards p {
-	font-size: 1.1rem;
+	font-size: 1rem;
 }
 
 
@@ -243,7 +285,7 @@ html {
 	font-size: 2rem;
 	font-weight: bold;
 	margin-bottom: 20px;
-	border-bottom: 1px solid var(--secondary-color);
+	border-bottom: 1px solid var(--primary-color);
 }
 
 .list-projects {
@@ -254,7 +296,9 @@ html {
 }
 
 .list-projects .project{
-	background-color: #eeeeee;
+	background-color: var(--bg-color);
+	border: 1px solid var(--primary-color);
+	border-radius: 10px;
 	height: 400px;
 }
 
@@ -264,7 +308,7 @@ html {
 	align-items: center;
 	width: 100%;
 	padding: 100px 0 20px 0;
-	background-color: var(--secondary-color);
+	background-color: var(--bg-color);
 }
 
 .contact-section .title {
@@ -286,7 +330,7 @@ html {
 	width: 500px;
 	max-width: 100%;
 	padding: 25px;
-	border: 1px solid #eeeeee;
+	border: 1px solid var(--primary-color);
 	border-radius: 20px;
 }
 
@@ -297,8 +341,13 @@ html {
 
 .contact-section .form input,
 .contact-section .form textarea {
-	border: 1px solid #000000;
+	border: 1px solid var(--primary-color);
 	border-radius: 5px;
+}
+
+.contact-section .form input:focus,
+.contact-section .form textarea:focus {
+	outline: var(--primary-color);
 }
 
 .contact-section .form input {
@@ -317,10 +366,19 @@ html {
 }
 
 .contact-section .send-btn {
+	cursor: pointer;
 	display: inline-block;
 	font-size: 1.1rem;
 	font-weight: bold;
+	background-color: var(--primary-color);
+	border: 1px solid var(--secondary-color);
+	border-radius: 5px;
 	padding: 10px 0;
+}
+
+.contact-section .send-btn:hover {
+	background-color: var(--secondary-color);
+	transition: background-color ease .3s;
 }
 
 /* FOOTER SECTION */
@@ -339,7 +397,7 @@ html {
   font-size: 1.25rem;
 	font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
 }
 
 .footer-section .footer-link:hover {
