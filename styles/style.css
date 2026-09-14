@@ -118,6 +118,9 @@ html {
   align-items: center;
   width: 100%;
 	height: 100vh;
+	background: 
+		linear-gradient(150deg, var(--primary-color) 1%, transparent 15%),
+		linear-gradient(217deg, var(--primary-color) 1%, transparent 15%);
 	padding: 0 10px;
 }
 
@@ -200,9 +203,17 @@ html {
 
 .hero-image {
 	width: 400px;
-	max-width: 95%;
+	max-width: 100%;
 	height: 400px;
-	background-color: #eeeeee;
+	padding: 10px;
+	background-color: var(--bg-color);
+	border-radius: 5px;
+}
+
+.hero-image img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
 }
 
 /* ABOUT - SECTION */
@@ -219,6 +230,11 @@ html {
 	width: 400px;
 	height: 350px;
 	background-color: #eeeeee;
+}
+
+.about-image img {
+	width: 100%;
+	height: 100%;
 }
 
 .about-content .title {
@@ -547,6 +563,13 @@ html {
 
 	.hero-section {
 		flex-direction: column-reverse;
+		justify-content: center;
+	}
+
+	.hero-image {
+		width: 100%;
+		height: 350px;
+		padding: 3px;
 	}
 
 	.about-content {
