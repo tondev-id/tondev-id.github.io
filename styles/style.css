@@ -564,6 +564,7 @@ html {
 	.hero-section {
 		flex-direction: column-reverse;
 		justify-content: center;
+		padding-top: 40px;
 	}
 
 	.hero-image {
